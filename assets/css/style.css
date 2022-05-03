@@ -53,29 +53,65 @@ h1 {
 }
 
 h2 {
-  color: red;
+  color: rgb(247, 147, 26);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.sections > h3 {
+  text-align: right;
+  padding-right: 20px;
+  border-right: 5px solid black;
+  flex: 0 0 10%;
+}
+
+.sections > div {
+  flex: 0 0 87%;
+  display: flex;
+}
+
+p {
+  padding-left: 10px;
 }
 
 .selfie {
+  border-radius: 30px 30px 30px 30px; /*More Oval shape */
+  padding-right: 5px;
+}
+
+.sections > figure {
+  flex-direction: column-reverse;
+  display: flex;
+  border: 5px solid black;
+}
+
+/* .section-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-image {
   max-width: 100%;
   height: auto;
 }
 
-/* This div design part is
-            used as an Image */
 .selfie {
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
+/* display: flex; */
+/* justify-content: center;
   border-radius: 50%;
-  text-align: center;
+  /* text-align: center;
   font-size: 30px;
-  float: left;
-  font-weight: bold;
-
-  /* Change the shape according
-                to the image */
-  shape-outside: circle();
-  /* background-color: Green; */
+  float: left; */
+/* shape-outside: circle();
   color: white;
 }
 
@@ -84,7 +120,18 @@ article {
   display: inline-block;
 }
 
-p {
-  text-align: justify;
-  font-size: 16px;
+.content {
+  display: flex;
+  justify-content: flex-end;
 }
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+} */

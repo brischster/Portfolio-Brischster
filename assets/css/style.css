@@ -65,14 +65,40 @@ h2 {
   justify-content: space-between;
 }
 
-.sections > h3 {
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.projects > h3 {
   text-align: right;
   padding-right: 20px;
-  border-right: 5px solid black;
+  color: rgb(247, 147, 26);
+  border-right: 5px solid rgb(77, 77, 78);
   flex: 0 0 10%;
 }
 
+.sections > h3 {
+  text-align: right;
+  padding-right: 20px;
+  color: rgb(247, 147, 26);
+  border-right: 5px solid rgb(77, 77, 78);
+  flex: 0 0 10%;
+}
+
+div.project-card {
+  max-width: 500px;
+  margin: auto;
+}
+
 .sections > div {
+  flex: 0 0 87%;
+  display: flex;
+}
+
+.projects > div {
   flex: 0 0 87%;
   display: flex;
 }
@@ -85,10 +111,14 @@ p {
   border-radius: 30px 30px 30px 30px; /*More Oval shape */
   padding-right: 5px;
 }
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+} */
 
 .sections > figure {
   flex-direction: column-reverse;
-  display: flex;
+
   border: 5px solid black;
 }
 .project-card {
@@ -101,7 +131,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-img {
+.project-image {
   max-width: 50%;
   max-height: 50%;
   object-fit: contain;
@@ -122,46 +152,14 @@ img {
   flex: 0 0 25%;
 }
 
-/* .section-title {
-  display: flex;
-  flex-direction: column;
+.project-title {
+  padding-left: 10px;
 }
 
-.section-image {
-  max-width: 100%;
-  height: auto;
+.contactinfo {
+  justify-content: space-around;
+  align-content: center;
+  padding-top: 25px;
+  font-size: 20px;
+  border: 3px solid rgb(77, 77, 78);
 }
-
-.selfie {
-  /* width: 200px;
-  height: 200px; */
-/* display: flex; */
-/* justify-content: center;
-  border-radius: 50%;
-  /* text-align: center;
-  font-size: 30px;
-  float: left; */
-/* shape-outside: circle();
-  color: white;
-}
-
-article {
-  padding-top: 75px;
-  display: inline-block;
-}
-
-.content {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.section-title {
-  display: flex;
-  justify-content: center;
-}
-
-.about-text {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 16px;
-} */
